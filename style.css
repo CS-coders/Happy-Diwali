@@ -6,7 +6,8 @@
     -webkit-user-select: none;
 
 }
-*{
+
+* {
     padding: 0;
     margin: 0;
 }
@@ -34,8 +35,8 @@ body {
 
 /* Navbar styles */
 .navbar {
-    background-color: rgba(94,41,17);
-    /* Transparent background with 50% opacity */
+    background-color: #c56a39;
+ 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,7 +71,8 @@ body {
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
 }
-.developer{
+
+.developer {
     text-align: right;
     padding-right: 20px;
     color: #000;
@@ -99,9 +101,18 @@ body {
 
     .company-name {
         margin: auto;
-        margin-right: 0px
+        margin-right: 0px;
+        font-size: 25px;
+
     }
-    
+    .developer {
+        text-align: right;
+        padding-right: 20px;
+        color: #000;
+        font-size: 12px;
+    }
+
+
 }
 
 /* ...................... */
@@ -113,8 +124,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
     /* background: ; */
     border-radius: 50%;
     border: 5px solid #ffffff;
@@ -165,37 +176,40 @@ body {
 @keyframes animate {
     0% {
         transform: rotate(30deg);
-        box-shadow: 0 0 30px #ff0;
+        box-shadow: 0 0 100px #ff0;
     }
 
     25% {
         transform: rotate(20deg);
+        box-shadow: 0 0 200px rgb(255, 0, 0);
     }
 
     50% {
         transform: rotate(15deg);
-        box-shadow: 0 0 100px #ff0;
+        box-shadow: 0 0 400px rgb(0, 187, 255);
     }
 
     75% {
         transform: rotate(20deg);
+        box-shadow: 0 0 200px rgb(255, 0, 0);
     }
 
     100% {
         transform: rotate(30deg);
-        box-shadow: 0 0 30px #ff0;
+        box-shadow: 0 0 100px #ff0;
     }
 }
 
 @keyframes rotate {
     0% {
         transform: scale(1.1) rotate(0deg);
+       
 
     }
 
     100% {
-        transform: scale(1.1) rotate(360deg);
-
+        transform: scale(1.1) rotate(180deg);
+        
     }
 }
 
@@ -229,13 +243,51 @@ h1 span {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+
+@media screen and (max-width: 768px) {
+    .circle {
+        width: 300px;
+        height: 300px;
+    }
+
+    .light {
+        width: 230px;
+        height: 90px;
+    }
+
+    .wish {
+        font-size: 14px;
+        font-weight: bolder;
+    }
+
+    h1 span {
+        font-size: 80px;
+        font-family: "Kaushan Script", cursive;
+    }
+
+    .light:before {
+        
+        top: -60px;
+        width: 30px;
+        height: 60px;
+    }
+
+    
+}
+
+/* @keyframes rotate {
+    }
+    }
+
+}
+
 /* ................. */
 
 footer {
-    background-color: rgba(94,41,17);
+    background-color: #c56a39;
     color:yellowgreen;
     text-align: center;
-    font-style: oblique;
+    font-weight: bold;
 
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 10px 0;
